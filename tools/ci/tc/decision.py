@@ -239,7 +239,8 @@ def create_tc_task(event, task, taskgroup_id, depends_on_ids, env_extra=None):
         },
         "extra": {
             "github_event": json.dumps(event)
-        }
+        },
+        "routes": ["checks"]
     }
     if env_extra:
         task_data["payload"]["env"].update(env_extra)
@@ -283,6 +284,15 @@ def build_task_graph(event, all_tasks, tasks):
 
     for task_name, task in iteritems(tasks):
         add_task(task_name, task)
+
+    # GitHub branch protection needs us to name explicit 'required' tasks -
+    # which doesn't suffice in the precense of a dynamic task graph. To work
+    # around this we declare a known 'sink' task that is scheduled only if all
+    # our required tasks for a given pull request succeed - we can then make
+    # the sink task the 'required' task for GitHub.
+    task_map_ids = list(map(lambda x: x[0], task_id_map.values()))
+    sink_task_id, sink_task_data = create_tc_task(event, all_tasks['sink-task'], taskgroup_id, task_map_ids)
+    task_id_map['sink-task'] = (sink_task_id, sink_task_data)
 
     return task_id_map
 

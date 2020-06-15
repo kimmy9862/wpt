@@ -480,3 +480,10 @@ tasks:
       schedule-if:
         run-job:
           - wptrunner_infrastructure
+
+  - sink-task:
+      description: >-
+        Sink task for all other tasks, indicates success
+      use:
+        - wpt-base
+      command: echo "Success"
