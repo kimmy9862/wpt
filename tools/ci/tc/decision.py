@@ -250,6 +250,31 @@ def create_tc_task(event, task, taskgroup_id, depends_on_ids, env_extra=None):
     return task_id, task_data
 
 
+def create_sink_task(event, taskgroup_id, task_id_map):
+    depends_on_ids = list(map(lambda x: x[0], task_id_map.values()))
+
+    task_id = taskcluster.slugId()
+    task_data = {
+        "taskGroupId": taskgroup_id,
+        "created": taskcluster.fromNowJSON(""),
+        "deadline": taskcluster.fromNowJSON("24 hours"),
+        "provisionerId": "built-in",
+        "schedulerId": "taskcluster-github",
+        "workerType": "succeed",
+        "metadata": {
+            "name": "sink-task",
+            "description": "Sink task for all other tasks, indicates success",
+            "owner": get_owner(event),
+            "source": event["repository"]["clone_url"]
+        },
+        "payload": {},
+        "routes": ["checks"],
+        "dependencies": depends_on_ids,
+        "requires": "all-completed"
+    }
+    return task_id, task_data
+
+
 def get_artifact_data(artifact, task_id_map):
     task_id, data = task_id_map[artifact["task"]]
     return {
@@ -290,9 +315,7 @@ def build_task_graph(event, all_tasks, tasks):
     # around this we declare a known 'sink' task that is scheduled only if all
     # our required tasks for a given pull request succeed - we can then make
     # the sink task the 'required' task for GitHub.
-    task_map_ids = list(map(lambda x: x[0], task_id_map.values()))
-    sink_task_id, sink_task_data = create_tc_task(event, all_tasks['sink-task'], taskgroup_id, task_map_ids)
-    task_id_map['sink-task'] = (sink_task_id, sink_task_data)
+    task_id_map['sink-task'] = create_sink_task(event, taskgroup_id, task_id_map)
 
     return task_id_map
 
