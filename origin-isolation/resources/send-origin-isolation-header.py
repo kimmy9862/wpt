@@ -43,6 +43,8 @@ def main(request, response):
         } catch (e) {
           parent.postMessage(e.name, "*");
         }
+      } else if (e.data.command === "get originIsolationRestricted") {
+        parent.postMessage(self.originIsolationRestricted, "*");
       }
 
       // We could also receive e.data === "WebAssembly.Module message received",
@@ -53,6 +55,6 @@ def main(request, response):
       e.source.postMessage("messageerror", "*");
     };
 
-    document.body.textContent = location.href;
+    document.body.append(location.href);
     </script>
     """
