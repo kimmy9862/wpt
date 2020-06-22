@@ -1,0 +1,166 @@
+
+"From 1668800975942322245@xxx Sun Jun 07 01:17:09 +0000 2020 X-GM-THRID: 1668800975942322245 X-Gmail-Labels: Inbox,Category Social,Unread Delivered-To: slimwood84@gmail.com Received: by 2002:a9d:21e5:0:0:0:0:0 with SMTP id s92csp1618696otb; 
+ Sat, 6 Jun 2020 18:17:09 -0700 (PDT) X-Google-Smtp-Source: ABdhPJxmNoncPqDkeYFSCUdpovde99gLdowLj99DYVTT1DemXmTdnq8Ujk3z6sSavW6qyP4oKcfC X-Received: by 2002:a25:be05:: with SMTP id h5mr26513840ybk.431.1591492629625; 
+ Sat, 06 Jun 2020 18:17:09 -0700 (PDT) ARC-Seal: i=1; a=rsa-sha256; t=1591492629; cv=none; 
+ d=google.com; s=arc-20160816; 
+ b=YD/p08Y3nM3ILt4dHPcqG47aq2GEi2bR9108rMHMKsq2IPdCn1L8nTE3yPGpQapVc/ 
+ HypQLdkwg5hxBBZd4iiCyb18PK4I6mx6nG0QbQNaI6xYAsSVgKXX88RzQXMQ4DbB1n3H 
+ VtkW17KLF/91ggWlzmDcaRhUEvcLKVfKFFnc1Ekz7J1ErhaFLfv57NgGWbaxm4Ctxsz4 
+ Z2KMQI7c4YILkSWRlNXAsaPy0vEC0PTzIC43QnTz2JnKqg/1VWN6Z81IpIzijTAUwfeT 
+ GeOEwsUuDaA+9ZQfMFU5oYww/knGmr7oRjbmEoRZF8TFmKOdgZxyk0Am0JN3h7FyKsSa 
+ nq6g== ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816; 
+ h=mime-version:message-id:feedback-id:list-unsubscribe:errors-to 
+ :reply-to:from:subject:to:date:dkim-signature; 
+ bh=61JBK8scxEGsPWm4pyQVmoG3PffpFWHIpQAhtN6VraY=; 
+ b=pNuqlLhZ3KE37vAq3aFMUA2GqYlfTkFn4Az6Tg2DtLGtijlI8es+V3p9x670ULpv6V 
+ lvZrac/M2KRzS4/LMFCNrcn4eBSKt5mk81r36nAK6Kg4Vl8lHYOl0BzS7jfU54gp/NQq 
+ oeVTup0H2pvdPnEaCGbcGBii+jWqmdw89Ef5yb+HDmMHELuf+256VGT0v6uTn4n+uWp/ 
+ +gQuAPVaC6Z0b7vE4UsrvBVuP8UkO+Xhqkp+cFlZEUUUQewa2xysS9LSU8xS/ySw8els 
+ Gi4//OQ/m0Zz1Kg4w7m/YIuEw61Kxde/fHqhGjzHBvaoRiZ2x5yUClhSyL8WZpoFhVcw 
+ /kbg== ARC-Authentication-Results: i=1; mx.google.com; 
+ dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b=GouNAjQK; 
+ spf=pass (google.com: domain of notification@facebookmail.com designates 66.220.155.151 as permitted sender) smtp.mailfrom=notification@facebookmail.com; 
+ dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com Return-Path: <notification@facebookmail.com> Received: from 66-220-155-151.mail-mail.facebook.com (66-220-155-151.mail-mail.facebook.com. [66.220.155.151]) 
+ by mx.google.com with ESMTPS id h11si10868835ybq.117.2020.06.06.18.17.09 
+ for <slimwood84@gmail.com> 
+ (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128); 
+ Sat, 06 Jun 2020 18:17:09 -0700 (PDT) Received-SPF: pass (google.com: domain of notification@facebookmail.com designates 66.220.155.151 as permitted sender) client-ip=66.220.155.151; Authentication-Results: mx.google.com; 
+ dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b=GouNAjQK; 
+ spf=pass (google.com: domain of notification@facebookmail.com designates 66.220.155.151 as permitted sender) smtp.mailfrom=notification@facebookmail.com; 
+ dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com; 
+ s=s1024-2013-q3; t=1591492616; 
+ bh=61JBK8scxEGsPWm4pyQVmoG3PffpFWHIpQAhtN6VraY=; 
+ h=Date:To:Subject:From:MIME-Version:Content-Type; 
+ b=GouNAjQKsRW8MK7o5A7Oqfdjc9fHJbIQ/TPOIiEPdWEIl/TlRbdRWzLDHsFiQ3lIW 
+ +GyMfrpBwrnaQC0xiPA8CQFCB/cglHi6uS4Enbps+LVp3ripXikhkPeRwnhBMzHBfg 
+ rk2h8YmhwEbiC32ZKdogU1Acliz7mbtBgZODpXbs= X-Facebook: from 2401:db00:132c:4e10:face:0:34:0 ([MTI3LjAuMC4x]) 
+ by www.facebook.com with HTTPS (ZuckMail); Date: Sat, 6 Jun 2020 18:16:56 -0700 To: Jay Miller <slimwood84@gmail.com> Subject: David Sawyers sent you a message. X-Priority: 3 X-Mailer: ZuckMail [version 1.00] Return-Path: notification@facebookmail.com From: "David Sawyers" <notification@facebookmail.com> Reply-to: noreply <noreply@facebookmail.com> Errors-To: notification@facebookmail.com X-Facebook-Notify: msg; from=100037347939665; t=cid.c.100037347939665:100050774843574; mailid=5a773f67a39c8G5afee2e4e0b6G0G0 List-Unsubscribe: <https://www.facebook.com/o.php?k=AS2L_lApAt0ly1U4&u=100050774843574&mid=5a773f67a39c8G5afee2e4e0b6G0G0> Feedback-ID: 0:msg:Facebook X-FACEBOOK-PRIORITY: 0 X-Auto-Response-Suppress: All Message-ID: <23915a57dd04415ef754aeffe209ab4c@3e723b591bdb95ce8f5c9b7032dc572ca97351d0da5efc73459c1fbaf438e43b> MIME-Version: 1.0 Content-Type: multipart/alternative; 
+ boundary="b1_23915a57dd04415ef754aeffe209ab4c" 
+
+--b1_23915a57dd04415ef754aeffe209ab4c Content-Type: text/plain; charset="UTF-8" Content-Transfer-Encoding: quoted-printable 
+Hi Jay, 
+David Sawyers sent you a message. 
+Thanks, The Facebook Team 
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D= =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D This message was sent to slimwood84@gmail.com. If you don't want to = receive these emails from Facebook in the future, please follow the link = below to unsubscribe. https://www.facebook.com/o.php?k=3DAS2L_lApAt0ly1U4&u=3D100050774843574&mi= d=3D5a773f67a39c8G5afee2e4e0b6G0G0 Facebook, Inc., Attention: Community Support, 1 Facebook Way, Menlo Park, = CA 94025 To help keep your account secure, please don't forward this email. Follow = the link below to learn more. https://www.facebook.com/email_forward_notice/?mid=3D5a773f67a39c8G5afee2e= 4e0b6G0G0 
+
+--b1_23915a57dd04415ef754aeffe209ab4c Content-Type: text/html; charset="UTF-8" Content-Transfer-Encoding: quoted-printable 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional = //EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" = content=3D"text/html; charset=3Dutf-8" /><style>@media all and (max-width: = 480px){*[class].ib_t{min-width:100% = !important}*[class].ib_row{display:block = !important}*[class].ib_ext{display:block !important;padding:10px 0 5px = 0;vertical-align:top !important;width:100% = !important}*[class].ib_img,*[class].ib_mid{vertical-align:top = !important}*[class].mb_blk{display:block = !important;padding-bottom:10px;width:100% = !important}*[class].mb_hide{display:none = !important}*[class].mb_inl{display:inline = !important}*[class].d_mb_flex{display:block !important}}.d_mb_show{display= :none}.d_mb_show_center{display:table;margin:auto}.d_mb_flex{display:flex}= @media only screen and (max-device-width: 480px){.d_mb_hide{display:none = !important}.d_mb_show{display:block !important}.d_mb_flex{display:block = !important}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text = h5,.mb_text h6{line-height:normal}.mb_work_text = h1{font-size:18px;line-height:normal;margin-top:4px}.mb_work_text = h2,.mb_work_text = h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text = h4,.mb_work_text h5,.mb_work_text = h6{font-size:14px;line-height:normal}.mb_work_text = a{color:#1270e9}.mb_work_text p{margin-top:4px}</style></head><body = style=3D"margin:0;padding:0;" dir=3D"ltr" bgcolor=3D"#ffffff"><table = border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" = id=3D"email_table" style=3D"border-collapse:collapse;"><tr><td = id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida = Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table = border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" = style=3D"border-collapse:collapse;"><tr><td height=3D"1" colspan=3D"3" = style=3D"line-height:1px;"><span = style=3D"color:#FFFFFF;font-size:1px;">=C2=A0 =C2=A0 David Sawyers sent = you a message. =C2=A0 Open Messenger =C2=A0 You&#039;ll need to use = Messenger to see and respond to David &#039;s message. With Messenger, you = can text, and make voice and video calls for free (standard mobile data = and text message charges apply). =C2=A0 =C2=A0 = =C2=A0</span></td></tr><tr><td width=3D"15" = style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td = style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" = cellpadding=3D"0" style=3D"border-collapse:collapse;html_width:100%;"><tr = style=3D""><td height=3D"9" style=3D"line-height:9px;" = colspan=3D"4">&nbsp;</td></tr><tr><td align=3D"left" style=3D""><a = href=3D"https://www.m.me/100037347939665/?_notif_data=3D%7B%22100037347939= 665%5C%2F%22%3A%22%22%2C%22medium%22%3A%22email%22%2C%22mid%22%3A%225a773f= 67a39c8G5afee2e4e0b6G0G0%22%2C%22bcode%22%3A%222.1591492616.AbxY_FbLapUUgk= rjYVo%22%2C%22n_m%22%3A%22slimwood84%5Cu0040gmail.com%22%7D" = style=3D"color:#3b5998;text-decoration:none;"><img = src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/aRdFHbNNxSH.png" = width=3D"32" height=3D"32" style=3D"border:0;" /></a></td><td width=3D"9" = style=3D"display:block;width:9px;">&nbsp;&nbsp;&nbsp;</td><td = align=3D"left" style=3D"font-size:17px;line-height:22px;"><span = class=3D"mb_text"><a href=3D"https://www.m.me/100037347939665/?_notif_data= =3D%7B%22100037347939665%5C%2F%22%3A%22%22%2C%22medium%22%3A%22email%22%2C= %22mid%22%3A%225a773f67a39c8G5afee2e4e0b6G0G0%22%2C%22bcode%22%3A%222.1591= 492616.AbxY_FbLapUUgkrjYVo%22%2C%22n_m%22%3A%22slimwood84%5Cu0040gmail.com= %22%7D" style=3D"color:#3b5998;text-decoration:none;"><span = style=3D"white-space:nowrap; = color:black;">Messenger</span></a></span></td><td align=3D"right" = style=3D"width:100%;font-size:15px;line-height:20px;"><a = href=3D"https://www.m.me/100037347939665/?_notif_data=3D%7B%22100037347939= 665%5C%2F%22%3A%22%22%2C%22medium%22%3A%22email%22%2C%22mid%22%3A%225a773f= 67a39c8G5afee2e4e0b6G0G0%22%2C%22bcode%22%3A%222.1591492616.AbxY_FbLapUUgk= rjYVo%22%2C%22n_m%22%3A%22slimwood84%5Cu0040gmail.com%22%7D" = style=3D"color:#0084ff;text-decoration:none;">Open = Messenger</a></td></tr><tr style=3D"border-bottom:solid 1px #e5e5e5;"><td = height=3D"9" style=3D"line-height:9px;" = colspan=3D"4">&nbsp;</td></tr></table></td><td width=3D"15" = style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td = width=3D"15" = style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td = style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" = cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td = height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr><tr><td = style=3D""><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" = align=3D"center" class=3D"ib_t" = style=3D"border-collapse:collapse;"><tr><td align=3D"center" style=3D""><a = href=3D"https://facebook.com/email/appredirect/?fallback_uri=3Dhttps%3A%2F= %2Fwww.facebook.com%2Fdavid.sawyers.925&amp;native_uri=3Dfb%3A%2F%2Fprofil= e%2F100037347939665&amp;email_type=3Demail" = style=3D"color:#3b5998;text-decoration:none;"><img src=3D"https://scontent= .xx.fbcdn.net/v/t1.0-1/cp0/p50x50/71759395_142968606958070_574001591039190= 6304_n.jpg?_nc_cat=3D107&amp;_nc_sid=3Dbbed71&amp;_nc_ohc=3Dfg-RS0vq2qUAX-= xb7R4&amp;_nc_ad=3Dz-m&amp;_nc_cid=3D0&amp;_nc_ht=3Dscontent.xx&amp;oh=3D2= db0ccd32f10fd30de2617c72ae41881&amp;oe=3D5F01157D" width=3D"72" = style=3D"border:0;border-radius:50%;" = /></a></td></tr></table></td></tr><tr style=3D""><td height=3D"28" = style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><span = style=3D"text-align:center;display:block;font-family:SFUIText-Regular, = Segoe UI, Helvetica Neue, Helvetica, Arial, = sans-serif;font-size:20px;line-height:24px;"><a href=3D"https://facebook.c= om/email/appredirect/?fallback_uri=3Dhttps%3A%2F%2Fwww.facebook.com%2Fdavi= d.sawyers.925&amp;native_uri=3Dfb%3A%2F%2Fprofile%2F100037347939665&amp;em= ail_type=3Demail" style=3D"color:#3b5998;text-decoration:none;"><span = style=3D"font-weight:bold; color:black;">David Sawyers</span></a> sent you = a message.</span></td></tr><tr style=3D""><td height=3D"28" = style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><table = border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" = class=3D"ib_t" style=3D"border-collapse:collapse;"><tr><td = align=3D"center" style=3D""><a href=3D"https://www.m.me/100037347939665/?_= notif_data=3D%7B%22100037347939665%5C%2F%22%3A%22%22%2C%22medium%22%3A%22e= mail%22%2C%22mid%22%3A%225a773f67a39c8G5afee2e4e0b6G0G0%22%2C%22bcode%22%3= A%222.1591492616.AbxY_FbLapUUgkrjYVo%22%2C%22n_m%22%3A%22slimwood84%5Cu004= 0gmail.com%22%7D" style=3D"color:#3b5998;text-decoration:none;display:bloc= k;width:100%;"><span style=3D"border-radius:4px;padding:12px 0px 12px = 0px;text-align:center;font-family:SFUIText-Regular, Segoe UI, Helvetica = Neue, Helvetica, Arial, sans-serif;font-size:16px;line-height:21px;display= :inline-block;color:#ffffff;background-color:#0084ff;width:280px;font-weig= ht:bold;">Open Messenger</span></a></td></tr></table></td></tr><tr = style=3D""><td height=3D"28" = style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><span = style=3D"text-align:center;display:block;font-family:SFUIText-Regular, = Segoe UI, Helvetica Neue, Helvetica, Arial, = sans-serif;font-size:15px;line-height:20px;color:#8e8e8e;">You&#039;ll = need to use Messenger to see and respond to <span = class=3D"blueName">David</span>&#039;s message. With Messenger, you can = text, and make voice and video calls for free (standard mobile data and = text message charges apply).</span></td></tr><tr style=3D""><td = height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr><tr><td = style=3D""><tr style=3D""><td height=3D"16" = style=3D"line-height:16px;">&nbsp;</td></tr></td></tr><tr style=3D""><td = height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr></table></td><td = width=3D"15" = style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td = width=3D"15" = style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td = style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" = cellpadding=3D"0" align=3D"left" style=3D"border-collapse:collapse;"><tr = style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"19" = style=3D"line-height:19px;">&nbsp;</td></tr><tr><td = style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana= ,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px;">This = message was sent to <a href=3D"mailto:slimwood84&#064;gmail.com" = style=3D"color:#3b5998;text-decoration:none;">slimwood84&#064;gmail.com</a= >. If you don&#039;t want to receive these emails from Facebook in the = future, please <a href=3D"https://www.facebook.com/o.php?k=3DAS2L_lApAt0ly= 1U4&amp;u=3D100050774843574&amp;mid=3D5a773f67a39c8G5afee2e4e0b6G0G0" = style=3D"color:#3b5998;text-decoration:none;">unsubscribe</a>.<br = />Facebook, Inc., Attention: Community Support, 1 Facebook Way, Menlo = Park, CA 94025</td></tr></table></td><td width=3D"15" = style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td = width=3D"15" = style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td = style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" = cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr><td = style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana= ,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px;"><span = style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana= ,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px;">To help = keep your account secure, please don&#039;t forward this email. <a = href=3D"https://www.facebook.com/email_forward_notice/?mid=3D5a773f67a39c8= G5afee2e4e0b6G0G0" style=3D"color:#3b5998;text-decoration:none;">Learn = More</a></span></td></tr></table></td><td width=3D"15" = style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr = style=3D""><td height=3D"20" style=3D"line-height:20px;" = colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img = src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3D5a773f67a39c8= G5afee2e4e0b6G0G0" style=3D"border:0;width:1px;height:1px;" = /></span></td></tr></table></body></html> 
+
+
+--b1_23915a57dd04415ef754aeffe209ab4c-- 
+
+From 1669158046530521709@xxx Wed Jun 10 23:52:38 +0000 2020 X-GM-THRID: 1669158046530521709 X-Gmail-Labels: Inbox,Category Updates,Unread Delivered-To: slimwood84@gmail.com Received: by 2002:a9d:21e5:0:0:0:0:0 with SMTP id s92csp877412otb; 
+ Wed, 10 Jun 2020 16:52:39 -0700 (PDT) X-Google-Smtp-Source: ABdhPJwtlfEqjY2g+o112qXf5sfcATz+d6bKj4WFMAOpqtifSXkvgFo9s9G04U7qwsuU1KFWO2YL X-Received: by 2002:a17:907:20ee:: with SMTP id rh14mr5836466ejb.395.1591833158979; 
+ Wed, 10 Jun 2020 16:52:38 -0700 (PDT) ARC-Seal: i=1; a=rsa-sha256; t=1591833158; cv=none; 
+ d=google.com; s=arc-20160816; 
+ b=DOCxfQQrRwuWyT2NM8kJyUgDQojAZWSSnRH8LpqRjciuiLsPhPnhIz23mnse8YfgIB 
+ i42mRTIHNFh9z+0vvGUuUafU/3Ywz+Q1jt0x04cFUsNdhSxLEPxnJsWcqAufNOmtPsXn 
+ AfBOX/lT7WoNjWDSiDY9G17m1ofD0MK+/4cARD5NBweROu/MZDnOtZLEitijImaA611b 
+ 6bD+G8YpWkbYqUCKGGfHVwWE3kUvqd2fzoThlZLH8Y6XrmT7OFAtlN3HOaqPUfGRMEeI 
+ sZZADPUiwuAF/fgEOWQr1KozvuZZ/gOdHZBVLCwqnUfcMyAuhvOXjUGV6tvJS/Jiqw/L 
+ ELWA== ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816; 
+ h=to:subject:message-id:mime-version:from:date 
+ :content-transfer-encoding:dkim-signature:dkim-signature; 
+ bh=puzESv+uls/n9zWcVuisiAomr+dZW8H6UQ6USN4N1x8=; 
+ b=xWi8a5rQ+oDmoWTNmhOgHQ3gtGwQ6ia30k7jEBG4bjcoagdfZYcSPjei0hXLL6Gt5q 
+ H0/ELGHStg03tz2IzopDB+2QgUb5LZ/MXYtKdwyXPlTjRUTseruTQQ+I1cIcAghy8uzw 
+ lDxIuQ0VfsXA19+lXr1DcfyqIAcR/o5wBGR6g/iC9TkwkMKaA2HUDFEPo9dJRtsRcqyN 
+ 45lWWNS99soXmxzXoVDPifMYb5eg/+jrLMTXdpQl3NdX1cxQyQlsYCgZiTTXcHyg1VSS 
+ eIDyLsEVmY1bxC+IL5vTSEV12J3KFtRJBXzqjLfc2Hxgis3h+j6UTovARWJ5L2pBZQVG 
+ utVg== ARC-Authentication-Results: i=1; mx.google.com; 
+ dkim=pass header.i=@line2.com header.s=smtpapi header.b=sbugSyZ1; 
+ dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=BiHtbPle; 
+ spf=pass (google.com: domain of bounces+1366952-e8f7-slimwood84=gmail.com@mail.line2.com designates 50.31.59.192 as permitted sender) smtp.mailfrom="bounces+1366952-e8f7-slimwood84=gmail.com@mail.line2.com" Return-Path: <bounces+1366952-e8f7-slimwood84=gmail.com@mail.line2.com> Received: from o1.mail.line2.com (o1.mail.line2.com. [50.31.59.192]) 
+ by mx.google.com with ESMTPS id dm9si1171335ejc.624.2020.06.10.16.52.38 
+ for <slimwood84@gmail.com> 
+ (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128); 
+ Wed, 10 Jun 2020 16:52:38 -0700 (PDT) Received-SPF: pass (google.com: domain of bounces+1366952-e8f7-slimwood84=gmail.com@mail.line2.com designates 50.31.59.192 as permitted sender) client-ip=50.31.59.192; Authentication-Results: mx.google.com; 
+ dkim=pass header.i=@line2.com header.s=smtpapi header.b=sbugSyZ1; 
+ dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=BiHtbPle; 
+ spf=pass (google.com: domain of bounces+1366952-e8f7-slimwood84=gmail.com@mail.line2.com designates 50.31.59.192 as permitted sender) smtp.mailfrom="bounces+1366952-e8f7-slimwood84=gmail.com@mail.line2.com" DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=line2.com; 
+ h=content-transfer-encoding:content-type:from:mime-version:subject: 
+ x-feedback-id:to; 
+ s=smtpapi; bh=puzESv+uls/n9zWcVuisiAomr+dZW8H6UQ6USN4N1x8=; 
+ b=sbugSyZ1J/3P3IjFEYdYCXOKfDHlunGOeI2Ay9CRKbnZ6xnzccXtbk6BtE4kh9C7uhaO 
+ +RMW540N7Hl3riQ4TwtNZamYPGcMJYJ8UZxALY8tdxBK5UQkvw6gubU97t27zInx/MVOCT 
+ eZK2p48PxFwwDaaTA0Ax4MuLNnkIkTQJc= DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.info; 
+ h=content-transfer-encoding:content-type:from:mime-version:subject: 
+ x-feedback-id:to; 
+ s=smtpapi; bh=puzESv+uls/n9zWcVuisiAomr+dZW8H6UQ6USN4N1x8=; 
+ b=BiHtbPleLH4kILP+kM4+GoUXz5z0k30+eA2wx0/b7rtD00RsATb1XY7eDuPPWRyhlqO8 
+ myJO4im78i3JeLYY3bKnxXtJJSn1SXTdGD2VXskpYxlySzYudKC0qGg4PlI6RFkgqgtYsF 
+ G/miqxHxxgIvsXniDlt6GJhvTQ8owy52I= Received: by filterdrecv-p3iad2-784dbb6bd8-m8bfj with SMTP id filterdrecv-p3iad2-784dbb6bd8-m8bfj-20-5EE17245-27 
+ 2020-06-10 23:52:37.496531021 +0000 UTC m=+618348.909742280 Received: from MTM2Njk1Mg (unknown) 
+ by ismtpd0013p1iad2.sendgrid.net (SG) 
+ with HTTP 
+ id aRmTu3YSScySyydY3AVfFg 
+ Wed, 10 Jun 2020 23:52:37.413 +0000 (UTC) Content-Transfer-Encoding: quoted-printable Content-Type: text/html; charset=utf-8 Date: Wed, 10 Jun 2020 23:52:37 +0000 (UTC) From: Line2 Team <noreply@line2.com> Mime-Version: 1.0 Message-ID: <aRmTu3YSScySyydY3AVfFg@ismtpd0013p1iad2.sendgrid.net> Subject: Don't Lose your Line2 Number X-Feedback-ID: 1366952:SG X-SG-EID: =?us-ascii?Q?LRqpuYMmRtqQkqZvSGlZGgE+5U5VmR2zSX+0SIQ8sYqIOVEjYB=2FjWVnO9U9x2A?= =?us-ascii?Q?cJqjNuX3LofcbHtlYKMensM+GRuPpA7viQtfae9?= =?us-ascii?Q?qWzrlVNAJbZt6VjpRacqqRQqoniV+NzQIU7i=2Fxi?= =?us-ascii?Q?ZvYwVQ=2FHuYdSiKmgzMrzEVEBjgfo5fm3qtsASd4?= =?us-ascii?Q?WegWoUh=2Ftov6GQi50JttEjA2MHEKFrCx16Cbej3?= =?us-ascii?Q?abjpDBtNErDdzVJoSiVY=2FYp97WA=2FygiIOUOXqP?= X-SG-ID: =?us-ascii?Q?N2C25iY2uzGMFz6rgvQsb4zH6xribA4Wr9h+bXjMhjaUEX+p5v0uP6SDG5ZYZ4?= =?us-ascii?Q?XV6RjD9Hwlt5OroOQOuDgZVQ=3D=3D?= To: slimwood84@gmail.com 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.= w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns=3D"http://www.w3.org/1999/xhtml"> 
+ <head> 
+ <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8= " /> 
+ <meta name=3D"format-detection" content=3D"telephone=3Dno" /> 
+ <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale= =3D1.0;" /> 
+ <title>Don't Lose your Line2 Number</title> 
+ <style> 
+ #psuedoBodyTable {width: 100% !important;} 
+ @media (min-device-width: 541px){#psuedoBodyTable {width:540px !i= mportant;}} 
+ </style> 
+ </head> 
+ <body style=3D"margin:0; padding:0; font-family: Arial, Helvetica, sans-s= erif; font-size:14px;" bgcolor=3D"#FFFFFE" leftmargin=3D"0" topmargin=3D"0"= marginwidth=3D"0" marginheight=3D"0"><!--[if (gte mso 9)|(IE)]><table widt= h=3D"540" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"= ><tr><td><![endif]--><table id=3D"psuedoBodyTable" align=3D"center" cellpad= ding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=3D"width: 10= 0%; max-width: 540px;"> 
+ <tr> 
+ <td id=3D"contentContainer" align=3D"center"> 
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"= 100%" style=3D"width: 100%;"> 
+ <tr> 
+ <td colspan=3D"5" height=3D"18" style=3D"font-size:0px;" /> 
+ </tr> 
+ <tr> 
+ <td width=3D"10" style=3D"font-size:0px;" /> 
+ <td id=3D"account-top" colspan=3D"3" align=3D"center"> 
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" wid= th=3D"100%" style=3D"max-width:540px;"> 
+ <tr> 
+ <td width=3D"10" /> 
+ <td> 
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"= 0" width=3D"100%" style=3D"width:100%"> 
+ <tr> 
+ <td colspan=3D"3" align=3D"right" valign=3D"top"> 
+ <p style=3D"color:#474748;line-height:20px;font= -size:14px;margin:0;padding:0;">Slim Miller | (863) 238-8778 | </p> 
+ </td> 
+ </tr> 
+ </table> 
+ </td> 
+ <td width=3D"10" /> 
+ </tr> 
+ </table> 
+ </td> 
+ <td width=3D"10" style=3D"font-size:0px;" /> 
+ </tr> 
+ <tr> 
+ <td colspan=3D"5" height=3D"18" style=3D"font-size:0px;" /> 
+ </tr> 
+ <tr> 
+ <td id=3D"hero-cell" colspan=3D"5" align=3D"center"> 
+ <table id=3D"heroTable" cellspacing=3D"0" cellpadding=3D"0"= border=3D"0" width=3D"100%" style=3D"max-width: 540px;"> 
+ <tr> 
+ <td align=3D"center"> 
+ <img style=3D"display:block;border:0;" src=3D"https:/= /www.line2.com/assets/email/10_12_16_confirmation/cover.png" width=3D"330" = height=3D"129" border=3D"0" alt=3D"Line2 Everywhere! Every Platform!" /> 
+ </td> 
+ </tr> 
+ </table> 
+ </td> 
+ </tr> 
+ <tr> 
+ <td bgcolor=3D"#FFFFFE" /> 
+ <td bgcolor=3D"#FFFFFE" colspan=3D"3" align=3D"center"> 
+ <table id=3D"emailBodyContainer" cellspacing=3D"0" cellpadd= ing=3D"0" border=3D"0" width=3D"100%" style=3D"max-width: 540px;"> 
+ <tr> 
+ <td colspan=3D"3" height=3D"36" style=3D"font-size:0px;= " /> 
+ </tr> 
+ <tr> 
+ <td colspan=3D"3"> 
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"= 0" style=3D"width: 100%;"> 
+ <tr> 
+ <td width=3D"10" style=3D"font-size:0px;"" 
+
+Sent from FullReader
